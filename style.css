@@ -1,0 +1,188 @@
+/* Chosen Google Fonts: Libre Baskerville for headings and Liter for body text */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Liter&display=swap');
+
+/* this keeps padding and borders within element widths */
+
+* {
+    box-sizing: border-box;
+}
+
+/* updated profile layout */
+
+body {
+    background-color: #F2E8D2;
+    color: #1E1A19;
+    font-family: "Liter", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* header */
+
+header {
+    background-color: #650108;
+    color: #F2E8D2;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: 2rem;
+}
+
+.tagline {
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: 1rem;
+}
+
+
+/* main my-profile contents */
+
+main {
+    width: 90%;
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #650108;
+}
+
+h3 {
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: 1.3rem;
+    color: #650108;
+}
+
+a {
+    color: #650108;
+}
+
+
+/* ABOUT ME */
+
+.about-container {
+    display: flex;
+    align-items: stretch;
+    width: fit-content;
+    max-width: 100%;
+    padding: 1rem;
+    border: 2px solid #650108;
+    margin-top: 1rem;
+    gap: 1.5rem;
+}
+
+.profile-photo {
+    width: 220px;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 700px;
+    min-width: 0;
+    text-align: justify;
+}
+
+/* THINGS I LOVE */
+
+.things-i-love {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* PASSION PROJECTS */
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.project img {
+    width: 30%;
+    height: auto;
+}
+
+.project-description {
+    width: 60%;
+	text-align: justify;
+}
+
+.project-date {
+    font-size: 0.9rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #650108;
+    color: #F2E8D2;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+
+/* mobile version layout */
+
+@media (max-width: 600px) {
+
+    main {
+        width: 90%;
+    }
+
+  .about-container {
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem;
+    }
+
+    .profile-photo {
+    width: 100%;
+    height: auto;
+    }
+
+    .about-text {
+    width: 100%;
+    max-width: 100%;
+    }
+
+    .project {
+    flex-direction: column;
+	}
+
+	.project img {
+    width: 70%;
+	}
+
+   .project-description {
+    width: 100%;
+	}
+
+    .things-i-love {
+        max-width: 100%;
+    }
+
+    .contact {
+        max-width: 100%;
+    }
+
+}
